@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background-color: #030f21;
+    color: #e2e8f0;
+    overflow-x: hidden;
+  }
+  
+  .font-mono-numbers {
+    font-family: 'JetBrains Mono', monospace;
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+/* Sea Blue Glassmorphism utilities */
+.glass-panel {
+  background: rgba(7, 24, 48, 0.72);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(56, 189, 248, 0.16);
+  box-shadow: 0 8px 32px 0 rgba(2, 10, 24, 0.65);
+}
+
+.glass-card {
+  background: rgba(14, 42, 75, 0.45);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(125, 211, 252, 0.12);
+  box-shadow: 0 4px 20px rgba(2, 11, 25, 0.4);
+}
+
+.glass-card:hover {
+  background: rgba(20, 56, 98, 0.6);
+  border-color: rgba(56, 189, 248, 0.45);
+  box-shadow: 0 8px 28px rgba(14, 165, 233, 0.22);
+}
+
+.glass-pill {
+  background: rgba(14, 44, 78, 0.5);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(125, 211, 252, 0.18);
+}
+
+.glass-nav {
+  background: rgba(4, 17, 36, 0.82);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(56, 189, 248, 0.15);
+  box-shadow: 0 4px 30px rgba(0, 8, 20, 0.5);
+}
+
+/* Floating animation */
+@keyframes floatSlow {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-12px) rotate(1.5deg); }
+}
+
+@keyframes pulseGlow {
+  0%, 100% { opacity: 0.45; transform: scale(1); }
+  50% { opacity: 0.85; transform: scale(1.08); }
+}
+
+.animate-float {
+  animation: floatSlow 7s ease-in-out infinite;
+}
+
+.animate-glow {
+  animation: pulseGlow 5s ease-in-out infinite;
+}
+
+

@@ -1,0 +1,7 @@
+{
+  "name": "P2UWM - Perkumpulan Petambak Udang Wahyuni Mandira",
+  "description": "Portal Resmi Perkumpulan Petambak Udang Wahyuni Mandira (P2UWM), Ogan Komering Ilir (OKI), Sumatera Selatan. Wadah perjuangan, informasi harga udang harian, forum anggota, pelaporan kendala teknis real-time, modul budidaya berkelanjutan, direktori kepengurusan, dan dasbor analitik operasional.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
